@@ -47,13 +47,6 @@
   width: 148px;
 }
 
-.header__logo-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-
 .header__logo-image {
   width: 100%;
   height: auto;
@@ -68,11 +61,12 @@
   align-items: flex-start;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24.3px;
+  line-height: 25px;
   color: #000000;
   padding: 0;
   margin: 0;
   margin-bottom: 0;
+  font-style: normal;
 }
 
 .address p {
@@ -195,7 +189,6 @@
 
 .lots {
   width: 1052px;
-  height: 723px;
   margin: 180px auto;
   padding: 0;
 }
@@ -253,13 +246,6 @@
 .card_type_book { background-image: url("../images/lot-book.jpg"); }
 .card_type_picture { background-image: url("../images/lot-art.jpg"); }
 
-.overlay {
-  position: absolute;
-  inset: 0; 
-  background-color: rgba(0, 0, 0, 0.6); 
-  z-index: 1;
-}
-
 .card__content {
   position: relative;
   z-index: 2; 
@@ -304,20 +290,14 @@
 
 .about {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 72px;
-  width: 1052px;
-  margin: 120px auto;
-  padding: 0;
+  grid-template-columns: 334px 1fr;
+  gap: 49px;
+  margin-top: 124px;
 }
 
-.about__column--logo {
-  display: flex;
-  justify-content: center; 
-  align-items: flex-start;
-}
-
-.about__logo-circle {
+.about__logo {
+  margin-top: 31px;
+  margin-left: 73px;
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -325,51 +305,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
 }
 
 .about__logo-image {
+  height: 114px;
   width: 148px; 
-  height: auto;
-  display: block;
-}
-
-.about__column--content {
-  display: flex;
-  flex-direction: column;
-  max-width: 693px;
-  width: 100%;
 }
 
 .about__title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 100%;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-  margin-top: 133px;
-  margin-bottom: 90px;
+margin-top: 132px;
+text-transform: uppercase;
+margin-bottom: 55px;
+font-size: 40px;
+line-height: 46.96px;
 }
 
-.about__text-wrapper {
+.about__column {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin: 0;
 }
 
-.about__text-wrapper p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+.about__text {
+  margin-right: 27px;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
-  margin: 0;
-  white-space: normal;
-  max-width: 100%;
-  text-align: left;
 }
 
 .footer {
@@ -377,17 +337,17 @@
   grid-template-columns: auto 1fr auto;
   align-items: flex-start;
   gap: 48px;
-  padding: 0 50px;
-  font-size: 16px;
-  min-height: 180px;
+  margin-top: 182px;
+  margin-bottom: 82px;
+  max-width: 1100px;
 }
 
 .footer__address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 6px;
   max-width: 264.57px;
+  margin-left: 50px;
 }
 
 .footer__menu {
@@ -403,7 +363,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 6px;
   width: 100%;
 }
 
@@ -415,7 +374,7 @@
 
 .footer__menu-link {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.1;
   color: #000000;
   text-decoration: underline;
@@ -434,7 +393,7 @@
   gap: 48px;
   list-style: none;
   width: 100%;
-  margin: 0;
+  margin-right: 50px;
   padding: 0;
 }
 
